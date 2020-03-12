@@ -1,0 +1,40 @@
+body {
+    position: relative;
+    font-family: tajwal;
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+        background-color: $border;
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $gold;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: $gold $border;
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 2;
+    display: none;
+
+    @include sm {
+        opacity: 0;
+    }
+}

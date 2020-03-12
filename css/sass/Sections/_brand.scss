@@ -1,0 +1,22 @@
+.brand {
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+
+    img {
+        max-width: 100%;
+        width: auto !important;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            filter: none;
+            opacity: 1;
+        }
+    }
+}

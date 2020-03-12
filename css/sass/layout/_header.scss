@@ -1,0 +1,124 @@
+header {
+    background-color: $text;
+    position: relative;
+    z-index: 3;
+
+    .header {
+        position: relative;
+        z-index: 3;
+        padding: 13px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            padding: 8px 0;
+            z-index: unset;
+        }
+    }
+
+    .logo {
+        width: 130px;
+        display: block;
+
+        @include xs {
+            width: 80px;
+        }
+    }
+
+    .sec-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .mo-user-nav {
+        display: flex;
+        align-items: center;
+        margin-right: 78px;
+
+        #{$ltr} & {
+            margin-left: 78px;
+            margin-right: 0;
+        }
+
+        @include xs {
+            margin-right: 0;
+
+            #{$ltr} & {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .user-anchor {
+        margin: 0 13px;
+        font-size: 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $gold;
+        }
+
+        @include xs {
+            margin: 0;
+            margin-right: 13px;
+
+            #{$ltr} & {
+                margin-left: 13px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .mo-menu-icon {
+        display: none;
+
+        @include sm {
+            display: flex;
+        }
+    }
+
+    .lang {
+        display: flex;
+        font-size: 14px;
+        color: #fff;
+        margin-right: 18px;
+
+        #{$ltr} & {
+            margin-left: 18px;
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $gold;
+        }
+
+        .lang-text {
+            margin: 0 8px;
+        }
+    }
+}
+
+
+.mo-search-icon {
+    &::before {
+        content: "";
+        font-family: "Linearicons-Free";
+        @include transition(all 0.3s ease-in-out);
+        transform: rotate(360deg);
+    }
+
+    &.search-open {
+        z-index: 99;
+
+        &::before {
+            content: "";
+            color: $gold;
+            transform: rotate(180deg);
+        }
+    }
+}

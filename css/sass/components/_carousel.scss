@@ -1,0 +1,181 @@
+.main-slider {
+    position: relative;
+    margin-top: 10px;
+
+    .owl-dots {
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include sm {
+            bottom: 10px;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.4);
+            outline: none;
+            border: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 4.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #000;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
+
+.brand-slider {
+    margin-top: 23px;
+
+    @include xs {
+        margin-top: 0;
+    }
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            color: $wish;
+            font-size: 18px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: -40px;
+
+                @include md {
+                    left: -20px;
+                }
+            }
+
+            &.owl-prev {
+                right: -40px;
+
+                @include md {
+                    right: -20px;
+                }
+            }
+
+            &:hover {
+                color: $text;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .owl-dot {
+            background: rgba(#000, 0.4);
+            outline: none;
+            border: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 4.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #000;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
+
+.products-sec {
+    margin-top: 60px;
+
+    @include xs {
+        margin-top: 25px;
+    }
+}
+
+.Product-slider {
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            color: $wish;
+            font-size: 18px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: -40px;
+
+                @include md {
+                    left: -20px;
+                }
+            }
+
+            &.owl-prev {
+                right: -40px;
+
+                @include md {
+                    right: -20px;
+                }
+            }
+
+            &:hover {
+                color: $text;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+
+        .owl-dot {
+            background: rgba(#000, 0.4);
+            outline: none;
+            border: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 4.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #000;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}

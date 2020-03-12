@@ -1,0 +1,164 @@
+//////////////news///////////////
+
+.newsletter-cont {
+    position: relative;
+}
+
+.newsletter-input {
+    background-color: #fff;
+    width: 100%;
+    height: 43px;
+    border-radius: 45px;
+    padding: 0 15px;
+    font-size: 15px;
+    text-align: right;
+    color: $text;
+    border: 1px solid $border;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        text-align: right;
+        font-size: 14px;
+        color: #bbbbbb;
+    }
+
+    &:focus {
+        border-color: $gold;
+
+    }
+
+
+}
+
+
+#{$ltr} .newsletter-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+}
+
+.newsletter-button {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $text;
+    width: 32px;
+    height: 32px;
+    @include transition(all 0.3s ease-in-out);
+    border-radius: 50%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $gold;
+    }
+
+    &:after {
+        content: "\e879";
+        font-family: 'Linearicons-Free';
+        font-size: 14px;
+        color: #fff;
+        @include transition(all 0.3s ease-in-out);
+    }
+}
+
+#{$ltr} .newsletter-button {
+    left: auto;
+    right: 6px;
+
+    &:after {
+        content: "\e87a";
+    }
+}
+
+///////////////////////////////////
+.search-cont {
+    position: absolute;
+    height: 45px;
+    width: 300px;
+    left: 200px;
+    top: 90%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 9;
+
+    #{$ltr} & {
+        right: 200px;
+        left: auto;
+    }
+
+    @include sm {
+        top: 110%;
+        left: 0;
+
+        #{$ltr} & {
+            right: 0;
+            left: auto;
+        }
+    }
+
+
+}
+
+.search-button {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $text;
+    width: 32px;
+    height: 32px;
+    @include transition(all 0.3s ease-in-out);
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $gold;
+    }
+}
+
+#{$ltr} .search-button {
+    left: auto;
+    right: 6px;
+}
+
+.search-input {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0 27px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: right;
+    @include transition(all 0.3s ease-in-out);
+    color: $text;
+    border: 2px solid $border;
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+        font-size: 14px;
+    }
+
+    &:focus {
+        border-color: $gold;
+    }
+}
+
+#{$ltr} .search-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+}

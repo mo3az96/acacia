@@ -1,0 +1,46 @@
+.col-foot-cont {
+    @include xs {
+        margin-bottom: 5px;
+        padding: 10px 15px;
+    }
+}
+
+.mo-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    padding: 0 15px;
+}
+
+.mo-accordion {
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &:after {
+        content: "\e874";
+        font-family: 'Linearicons-Free';
+        font-size: 13px;
+    }
+
+    &.active {
+
+        &:after {
+            content: "\e873";
+        }
+    }
+
+    &.nav-foot-header {
+        @include xs {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+}

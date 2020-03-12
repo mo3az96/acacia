@@ -1,0 +1,64 @@
+@keyframes vibe {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    25% {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        -o-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    75% {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes shape {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.fixall {
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    text-decoration: none;
+
+    &:hover {
+
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
+    }
+
+    &:focus {
+
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
+    }
+}

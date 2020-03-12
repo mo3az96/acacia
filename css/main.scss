@@ -1,0 +1,21 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+@import 'sass/helpers/classes';
+
+@import 'sass/base/reset';
+@import 'sass/base/typography';
+
+@import 'sass/components/forms';
+@import 'sass/components/navbar';
+@import 'sass/components/carousel';
+@import 'sass/components/accordion';
+@import 'sass/components/mega';
+
+@import 'sass/layout/loader';
+@import 'sass/layout/header';
+@import 'sass/pages/home';
+@import 'sass/Sections/brand';
+@import 'sass/Sections/cats';
+@import 'sass/Sections/product';
+@import 'sass/layout/footer';
+@import 'sass/components/XS';
